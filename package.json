@@ -1,13 +1,12 @@
 {
   "name": "reductive",
   "version": "2.1.1",
-  "description": "Redux in Reason",
+  "description": "Redux in ReScript",
   "main": "index.js",
   "scripts": {
-    "build": "bsb -make-world",
-    "start": "bsb -make-world -w",
-    "clean": "bsb -clean-world",
-    "test": "npm run build && jest --silent",
+    "build": "rescript",
+    "start": "rescript build -w",
+    "clean": "rescript clean",
     "webpack": "webpack -w"
   },
   "repository": {
@@ -17,9 +16,8 @@
   "homepage": "https://github.com/reasonml-community/reductive#readme",
   "bugs": "https://github.com/reasonml-community/reductive/issues",
   "keywords": [
-    "reason",
-    "reasonml",
-    "ocaml",
+    "rescript",
+    "react",
     "redux",
     "state management"
   ],
@@ -29,16 +27,10 @@
     "reason-react": "^0.7.0"
   },
   "devDependencies": {
-    "@glennsl/bs-jest": "^0.4.8",
-    "bs-platform": "^5.0.6",
-    "bs-react-testing-library": "^0.5.0",
-    "immutable-re": "https://github.com/facebookincubator/immutable-re.git",
+    "rescript": "^9.1.4",
+    "@rescript/react": "^0.10.0",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "reason-hooks-testing-library": "^0.2.0",
-    "reason-react": "^0.7.0",
-    "webpack": "^4.21.0",
-    "webpack-cli": "^3.1.2"
+    "react-dom": "^16.8.6"
   },
   "dependencies": {
     "use-subscription": "^1.0.0"
